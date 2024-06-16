@@ -19,4 +19,23 @@ personForm.addEventListener("submit", (e) => {
   people.push(newPerson);
 
   localStorage.setItem("people", JSON.stringify(people));
+
+  personForm.nextElementSibling.remove();
+
+  const tempDiv = document.createElement("div");
+
+  for(let i of people){
+    const temp = document.createElement("p");
+    temp.append(i.name, " ", i.age);
+    tempDiv.appendChild(temp);
+  }
+
+  personForm.after(tempDiv);
+
 });
+
+// console.log(people);
+
+// for(let i of people){
+//   console.log(`${i.name} ${i.age}`)
+// }
