@@ -7,6 +7,19 @@ const addPersonBtn = document.getElementById("addPersonBtn");
 let people = JSON.parse(localStorage.getItem("people"));
 if (!people) people = [];
 
+const display = () => {
+  const tempDiv = document.createElement("div");
+
+for(let i of people){
+  const temp = document.createElement("p");
+  temp.append(i.name, " ", i.age);
+  tempDiv.appendChild(temp);
+}
+personForm.after(tempDiv);
+}
+
+display();
+
 personForm.addEventListener("submit", (e) => {
   e.preventDefault();
   //   return;
@@ -22,15 +35,7 @@ personForm.addEventListener("submit", (e) => {
 
   personForm.nextElementSibling.remove();
 
-  const tempDiv = document.createElement("div");
-
-  for(let i of people){
-    const temp = document.createElement("p");
-    temp.append(i.name, " ", i.age);
-    tempDiv.appendChild(temp);
-  }
-
-  personForm.after(tempDiv);
+  display();
 
 });
 
