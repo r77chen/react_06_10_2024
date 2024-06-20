@@ -28,4 +28,9 @@ class TodoView {
     const todoItem = document.getElementById(todoId);
     todoItem.remove();
   }
+
+  setRemainingCount(newCount) {
+    const countElem = document.getElementById("remaining-todo-count");
+    countElem.textContent = newCount;
+  }
 }

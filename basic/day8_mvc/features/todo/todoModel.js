@@ -4,6 +4,14 @@ class TodoModel {
     this.#todos = [];
   }
 
+  setTodos(todos) {
+    this.#todos = todos;
+  }
+
+  get length() {
+    return this.#todos.length;
+  }
+
   getTodos() {
     return [...this.#todos];
   }
