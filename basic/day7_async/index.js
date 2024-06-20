@@ -70,5 +70,7 @@ const getUsersInformationByIds = async (...userIds) => {
 };
 
 getUsersInformationByIds(1, 2, 3).then((users) => {
-//   console.log(users);
+  //   console.log(users);
 });
+
+
