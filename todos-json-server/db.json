@@ -1,12 +1,8 @@
 {
   "todos": [
     {
-      "id": "1",
+      "id": "abac",
       "task": "cook"
-    },
-    {
-      "id": "bfbf",
-      "task": "play"
     }
   ],
   "posts": [
