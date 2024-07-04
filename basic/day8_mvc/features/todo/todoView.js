@@ -14,6 +14,7 @@ class TodoView {
 
     const todoTask = document.createElement("span");
     todoTask.classList.add("todo-item__task");
+
     todoTask.textContent = task;
 
     const deleteBtn = document.createElement("button");
