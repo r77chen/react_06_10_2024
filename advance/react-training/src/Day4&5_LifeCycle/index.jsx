@@ -1,13 +1,15 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ClassCounter from "./Counter";
-import PostsList from "./PostsList";
-import PostFetcher from "../projects/PostFetcher";
+import UseEffectLearn from "./UseEffectLearn";
+import TodosList from "./TodosList";
+import { PostFetcherFn, PostFetcherClass } from "../projects/PostFetcher";
 
-export default function Day4Lifecycle() {
+export default function Day45Lifecycle() {
   const [shown, setShown] = useState(true);
   const [count, setCount] = useState(0);
 
   // console.log("parent rerendering");
+
 
   return (
     <div>
@@ -24,10 +26,17 @@ export default function Day4Lifecycle() {
           Re-render Parent Component
         </button>
       </div>
-      {/* {shown ? <ClassCounter title={"Counter"} /> : null} */}
+      {shown ? (
+        <>
+          {/* Class Components */}
+          {/* <ClassCounter title={"Counter"} /> */}
 
-      {/* <PostsList /> */}
-      <PostFetcher />
+          {/* Function Components */}
+          {/* <UseEffectLearn /> */}
+          {/* <TodosList /> */}
+          <PostFetcherFn />
+        </>
+      ) : null}
     </div>
   );
 }

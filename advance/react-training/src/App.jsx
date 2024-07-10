@@ -4,7 +4,7 @@ import Day1React from "./Day1";
 import RenderingTheUI from "./RenderingTheUI";
 import Day3 from "./Day3";
 import SelectAll from "./projects/SelectAll";
-import Day4Lifecycle from "./Day4LifeCycle";
+import Day45Lifecycle from "./Day4&5_LifeCycle";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
       {/* <RenderingTheUI /> */}
       {/* <Day3 /> */}
       {/* <SelectAll /> */}
-      <Day4Lifecycle />
+      <Day45Lifecycle />
     </>
   );
 }
