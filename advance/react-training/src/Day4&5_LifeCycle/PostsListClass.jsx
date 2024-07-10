@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-export default class PostsList extends Component {
+export default class PostsListClass extends Component {
   state = {
     posts: [],
   };
