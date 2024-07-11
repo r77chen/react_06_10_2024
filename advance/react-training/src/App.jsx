@@ -5,6 +5,7 @@ import RenderingTheUI from "./RenderingTheUI";
 import Day3 from "./Day3";
 import SelectAll from "./projects/SelectAll";
 import Day45Lifecycle from "./Day4&5_LifeCycle";
+import Day6 from "./Day6";
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
       {/* <RenderingTheUI /> */}
       {/* <Day3 /> */}
       {/* <SelectAll /> */}
-      <Day45Lifecycle />
+      {/* <Day45Lifecycle /> */}
+      <Day6 />
     </>
   );
 }
