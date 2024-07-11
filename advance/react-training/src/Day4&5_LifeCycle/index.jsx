@@ -3,13 +3,13 @@ import ClassCounter from "./Counter";
 import UseEffectLearn from "./UseEffectLearn";
 import TodosList from "./TodosList";
 import { PostFetcherFn, PostFetcherClass } from "../projects/PostFetcher";
+import InitPropWithState from "./InitPropWithState";
 
 export default function Day45Lifecycle() {
   const [shown, setShown] = useState(true);
   const [count, setCount] = useState(0);
 
   // console.log("parent rerendering");
-
 
   return (
     <div>
@@ -37,6 +37,8 @@ export default function Day45Lifecycle() {
           <PostFetcherFn />
         </>
       ) : null}
+
+      <InitPropWithState />
     </div>
   );
 }
