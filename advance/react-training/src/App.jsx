@@ -6,6 +6,7 @@ import Day3 from "./Day3";
 import SelectAll from "./projects/SelectAll";
 import Day45Lifecycle from "./Day4&5_LifeCycle";
 import Day6 from "./Day6";
+import Day7 from "./Day7";
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
       {/* <Day3 /> */}
       {/* <SelectAll /> */}
       {/* <Day45Lifecycle /> */}
-      <Day6 />
+      {/* <Day6 /> */}
+      <Day7 />
     </>
   );
 }

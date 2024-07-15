@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import useFetch from "./hooks/useFetch";
 
-console.log(React);
-
 export default function PostsList() {
   const {
     loading,
