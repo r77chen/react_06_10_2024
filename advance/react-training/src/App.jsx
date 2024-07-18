@@ -8,6 +8,7 @@ import Day45Lifecycle from "./Day4&5_LifeCycle";
 import Day6 from "./Day6";
 import Day7 from "./Day7";
 import Day8 from "./Day8";
+import Day9Redux from "./Day9Redux";
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
       {/* <Day45Lifecycle /> */}
       {/* <Day6 /> */}
       {/* <Day7 /> */}
-      <Day8 />
+      {/* <Day8 /> */}
+      <Day9Redux />
     </>
   );
 }

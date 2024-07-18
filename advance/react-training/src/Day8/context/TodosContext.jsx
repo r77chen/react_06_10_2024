@@ -16,11 +16,11 @@ export function TodosProvider({ children }) {
 
   return (
     <TodosContext.Provider
-      value={{
-        todos,
-        handleAdd,
-        handleDelete,
-      }}
+        value={{
+          todos,
+          handleAdd,
+          handleDelete,
+        }}
     >
       {children}
     </TodosContext.Provider>
