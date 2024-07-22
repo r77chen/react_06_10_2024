@@ -1,16 +1,18 @@
 import { applyMiddleware, createStore } from "redux";
 import { thunk } from "redux-thunk";
 import rootReducer from "./reducers";
+import { persistStore, persistReducer } from "redux-persist";
+import storage from "redux-persist/lib/storage"; // defaults to localStorage for web
 
-const logger = (store) => (next) => (action) => {
-  console.group(action.type);
-  console.info("dispatching", action);
-  let result = next(action);
-  console.log("next state", store.getState());
-  console.groupEnd();
-  return result;
+const persistConfig = {
+  key: "root",
+  storage,
 };
 
-const store = createStore(rootReducer, applyMiddleware(thunk));
+const persistedReducer = persistReducer(persistConfig, rootReducer);
 
-export default store;
+export default () => {
+  let store = createStore(persistedReducer, applyMiddleware(thunk));
+  let persistor = persistStore(store);
+  return { store, persistor };
+};

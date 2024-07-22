@@ -13,7 +13,7 @@ export default function Day9Redux() {
 
   const dispatch = useDispatch();
 
-  return <UserProfile />;
+  // return <UserProfile />;
 
   return (
     <div>

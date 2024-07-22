@@ -9,6 +9,7 @@ import Day6 from "./Day6";
 import Day7 from "./Day7";
 import Day8 from "./Day8";
 import Day9Redux from "./Day9Redux";
+import Day10 from "./Day10";
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
       {/* <Day6 /> */}
       {/* <Day7 /> */}
       {/* <Day8 /> */}
-      <Day9Redux />
+      {/* <Day9Redux /> */}
+      <Day10 />
     </>
   );
 }
