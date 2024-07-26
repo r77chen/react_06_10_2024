@@ -3,6 +3,7 @@ import "./App.css";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Fallback from "./lectures/Performance/Fallback";
+import RefLearn from "./lectures/RefLearn";
 
 const Performance = lazy(() => import("./lectures/Performance"));
 
@@ -18,6 +19,9 @@ function App() {
             <li>
               <Link to="/performance">Performance</Link>
             </li>
+            <li>
+              <Link to="/ref">Ref Learn</Link>
+            </li>
           </ul>
         </nav>
         <Switch>
@@ -25,6 +29,9 @@ function App() {
             <Suspense fallback={<Fallback />}>
               <Performance />
             </Suspense>
+          </Route>
+          <Route path="/ref">
+            <RefLearn />
           </Route>
         </Switch>
       </div>
